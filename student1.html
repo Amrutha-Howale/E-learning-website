@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8"/>
+	<title>Student</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="width=device-width, initial-scale=1" name="Viewport"/>
+	
+</head>
+
+
+<style>
+
+	html, body{
+		margin: 0;
+		padding: 0;
+		background-color: #FFFDF0;
+		/*height: 100%;*/
+	}
+.main
+{
+	padding: 0;
+	margin: 0;
+}
+.header
+{
+	margin-top: 0px;
+	background-color: lightblue;
+	width:auto;
+	height:50px;
+	padding-top: 15px;
+	width: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+.head1{
+	color:rgb(255,79,126);
+	font-size: 40px;
+	font-style: italic;
+	/*position: absolute;
+	top: 30%;
+	width: 100%;*/
+	margin-left: 20%;
+	margin-top: 15%;
+	
+
+}
+.horizontaltext{
+background-color: grey;
+font-style: italic;
+text-align: center;
+position: relative;
+}
+.image 
+{
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 450px;
+	clear: both;
+}
+
+
+.name1
+{
+	font-size: 20px;
+	font-style: italic;
+	color: black;
+	padding-left:15px;
+	float: right;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+
+
+
+.button {
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	clear: both;
+	background-color:  rgba(28,110,164,0.29);
+}
+
+/*tearchers details*/
+.boxforteach{
+	height: 400px;
+	margin-bottom: 5%;
+}
+
+/*.subjectsoff{
+	background-image: url(https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center;
+  height: 20%;
+    font-family: poppins;
+}*/
+
+.first{
+ width: 350px;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+  float: left;
+}
+.second{
+ width: 350px;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+  float: left;
+}
+.box-img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+/*contact form*/
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/*top navigation bar*/
+
+.topbar {
+  background-image: url(https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  /*-webkit-background-size:cover;*/
+  background-size:cover;
+  background-position: center;
+  /*height: 50%;*/
+    font-family: poppins;
+}
+
+.navbar{
+  padding-top: 25px;
+}
+/*nav {
+ position: relative;
+ width: calc(100% - 60px);
+ margin: 0 auto;
+ background: #000000;
+ z-index: 1;
+ text-align: right;
+ padding-right: 2%;
+}*/
+.logo {
+  width: 25%;
+  float: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 25px;
+  text-align: left;
+  padding: 10px 25px;
+}
+.menu-area li {
+  display: inline-block;
+    list-style-type: none;
+    float: right;
+}
+.menu-area a {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+    text-decoration: none;    
+}
+.menu-area a:hover {
+  background: deeppink;
+  color: #fff;
+}
+/*nav:before {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-right: 10px solid #333;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  left: 0;
+}
+nav:after {
+  position: absolute;
+  content: '';
+  border-top: 10px solid #333;
+  border-left: 10px solid #333;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: 100%;
+  right: 0;
+}*/
+
+/*footer*/
+.footer{
+	background: #303036;
+	transition: #d3d3d3;
+	height: 400px;
+	position: relative;
+}
+
+.footer .footer-content{
+	border: 1px solid grey;
+	height: 350px;
+	display: flex;
+}
+
+.footer .footer-content .footer-section{
+	flex:1;
+	padding-top: 25px;
+	border: 1px solid white;
+}
+
+.footer .footer-bottom{
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+
+}
+
+
+
+
+</style>
+
+<body>
+	<div class="topbar">
+	<div class="navbar">
+        <nav>
+            <div class="logo">
+            Company Logo</div>
+                <div class="menu-area">
+                <li><a href="loginmain.html">Logout</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="student1.html">Home</a></li>
+       
+            </div>
+        </nav>    
+	<div class="head1">
+       <h1>LEARN AND ENJOY</h1>
+</div>
+</div>
+</div>
+<div class="subjectsoff">
+	<div style="font-style: italic;">
+		<h1>Subjects we offer :</h1>
+	</div>
+	<div class="boxforteach">	
+		<div class="first">
+<img src="image2.png" alt="" class="box-img">
+  <h1>Mathematics</h1>
+<h5>Enjoy maths and solve problems </h5>
+<p>Mathematics is a subject where you can learn how it impacts on your life.</p>
+</div>
+<div class="second">
+<img src="image2.png" alt="" class="box-img">
+  <h1>Biology</h1>
+<h5>Science is to enjoy and learn </h5>
+<p>Science is a very enjoyable subject ,we can learn how our ecosystem works ,how a human body works. And many more intersting topics</p>
+</div>
+</div>
+
+<div class="boxforteach">	
+		<div class="first">
+<img src="image2.png" alt="" class="box-img">
+  <h1>Physics</h1>
+<h5>Enjoy physics and learn </h5>
+<p>Pysics is a subject where you learn hoe to find solutions for practical problems in our daily lives.Come lets enjoy the subject and learn.</p>
+</div>
+<div class="second">
+<img src="image2.png" alt="" class="box-img">
+  <h1>Chemistry</h1>
+<h5>Chemistry is all about chemicals </h5>
+<p>Chemistry is a subject in which we learn to prepare way more interesting solutions.We learn about chemical formulas and the molecular structures.</p>
+</div>
+</div>
+</div>
+
+
+
+<!-- <div class="container">
+	<h3>Contact Form</h3>
+  <form action="index.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div> -->
+
+<div class="footer">
+	<div class="footer-content">
+		<div class="footer-section about" style="text-align: center;">
+			<h1 class="logo-text" style=" font-style: italic;"><span style="color: #009980;">Learn </span><span>and </span><span style="color: #009980;">Enjoy</span></h1>
+			<p style="color: white; font-style: italic;">
+				Learn and Enjoy is a website where a student can learn and teacher can upload their teachings in this website .This is designed and developed by Amrutha C Howale.
+			</p>
+			<div class="contact" style="color: white; font-style: italic;">
+				<h5>
+					phone number: 112233445
+					<br>
+					<br>
+				Email:ammuhowale@gmail.com</h5>
+			</div>
+			
+		</div>
+
+		<div class="footer-section links" style="text-align: center;">
+			<h2 style="font-style: italic;font-size: 30px;">Quick Links</h2>
+			<br>
+			
+				<a href="#" style="color: grey;">
+					<li> Home</li>
+				</a>
+				<br>
+				<a href="videos.html" style="color: grey;">
+					<li> Videos</li>
+				</a>
+				<br>
+				<a href="loginmain.html" style="color: grey;">
+					<li> Logout</li>
+				</a>
+			
+		</div>
+		
+	<div class="footer-bottom">
+		&copy; learn and enjoy | Developed by Amrutha C Howale and Adhya M
+	</div>
+</div>
+
+  
+  
+</body>
+</html>
